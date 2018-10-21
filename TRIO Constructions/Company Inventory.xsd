@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Company_Inventory" targetNamespace="http://tempuri.org/Company Inventory.xsd" xmlns:mstns="http://tempuri.org/Company Inventory.xsd" xmlns="http://tempuri.org/Company Inventory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TRIOConstructionsInventoryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TRIOConstructionsInventoryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TRIO_Constructions.Properties.Settings.GlobalReference.Default.TRIOConstructionsInventoryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="asset_details_tableTableAdapter" GeneratorDataComponentClassName="asset_details_tableTableAdapter" Name="asset_details_table" UserDataComponentName="asset_details_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetAllData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetAllData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetAllData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_details_table.*
+FROM asset_details_table</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="category" DataSetColumn="category" />
+              <Mapping SourceColumn="asset_name" DataSetColumn="asset_name" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="quality" DataSetColumn="quality" />
+              <Mapping SourceColumn="launch_date" DataSetColumn="launch_date" />
+              <Mapping SourceColumn="supplier" DataSetColumn="supplier" />
+              <Mapping SourceColumn="asset_description" DataSetColumn="asset_description" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+              <Mapping SourceColumn="po_number" DataSetColumn="po_number" />
+              <Mapping SourceColumn="grn_no" DataSetColumn="grn_no" />
+              <Mapping SourceColumn="serial_no" DataSetColumn="serial_no" />
+              <Mapping SourceColumn="invoice_no" DataSetColumn="invoice_no" />
+              <Mapping SourceColumn="expirydateof_warranty" DataSetColumn="expirydateof_warranty" />
+              <Mapping SourceColumn="repair_history" DataSetColumn="repair_history" />
+              <Mapping SourceColumn="remarks" DataSetColumn="remarks" />
+              <Mapping SourceColumn="cost" DataSetColumn="cost" />
+              <Mapping SourceColumn="pre_fix" DataSetColumn="pre_fix" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_details_table.*
+FROM asset_details_table
+WHERE        (asset_details_table.quality = @quality)
+ORDER BY asset_details_table.launch_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="quality" ColumnName="quality" DataSourceName="TRIOConstructionsInventory.dbo.asset_details_table" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@quality" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="quality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByAssetName" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAssetName" GeneratorSourceName="FillByAssetName" GetMethodModifier="Public" GetMethodName="GetDataByAssetName" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAssetName" UserSourceName="FillByAssetName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_details_table.*
+FROM asset_details_table
+WHERE (asset_details_table.asset_name = @assetname)
+ORDER BY asset_details_table.launch_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="assetname" ColumnName="asset_name" DataSourceName="TRIOConstructionsInventory.dbo.asset_details_table" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@assetname" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="asset_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByLaunchDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByLaunchDate" GeneratorSourceName="FillByLaunchDate" GetMethodModifier="Public" GetMethodName="GetDataByLaunchDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByLaunchDate" UserSourceName="FillByLaunchDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_details_table.*
+FROM asset_details_table
+WHERE (asset_details_table.launch_date &lt;= @launchdate)
+ORDER BY asset_details_table.launch_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="launchdate" ColumnName="launch_date" DataSourceName="TRIOConstructionsInventory.dbo.asset_details_table" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@launchdate" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="launch_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="site_inventory_tableTableAdapter" GeneratorDataComponentClassName="site_inventory_tableTableAdapter" Name="site_inventory_table" UserDataComponentName="site_inventory_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillFromSite" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataFromSite" GeneratorSourceName="FillFromSite" GetMethodModifier="Public" GetMethodName="GetDataFromSite" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataFromSite" UserSourceName="FillFromSite">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT site_inventory_table.asset_code, asset_details_table.asset_name, site_inventory_table.site, site_inventory_table.quantity
+FROM site_inventory_table INNER JOIN asset_details_table ON asset_details_table.asset_code = site_inventory_table.asset_code
+WHERE site_inventory_table.site = @site</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="site" ColumnName="site" DataSourceName="TRIOConstructionsInventory.dbo.site_inventory_table" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@site" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="site" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="site" DataSetColumn="site" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="asset_name" DataSetColumn="asset_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mtn_details_tableTableAdapter" GeneratorDataComponentClassName="mtn_details_tableTableAdapter" Name="mtn_details_table" UserDataComponentName="mtn_details_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [mtn_details_table] ([mtn_no], [transferred_date], [from_where], [to_where], [asset_code], [quantity], [working_status], [hire_name]) VALUES (@mtn_no, @transferred_date, @from_where, @to_where, @asset_code, @quantity, @working_status, @hire_name)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@mtn_no" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@transferred_date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="transferred_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@from_where" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="from_where" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@to_where" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="to_where" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@asset_code" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="asset_code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@working_status" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="working_status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hire_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hire_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        mtn_no, transferred_date, from_where, to_where, asset_code, quantity, working_status, hire_name
+FROM            mtn_details_table
+ORDER BY mtn_no</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mtn_no" DataSetColumn="mtn_no" />
+              <Mapping SourceColumn="transferred_date" DataSetColumn="transferred_date" />
+              <Mapping SourceColumn="from_where" DataSetColumn="from_where" />
+              <Mapping SourceColumn="to_where" DataSetColumn="to_where" />
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="working_status" DataSetColumn="working_status" />
+              <Mapping SourceColumn="hire_name" DataSetColumn="hire_name" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDate" GeneratorSourceName="FillByDate" GetMethodModifier="Public" GetMethodName="GetDataByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDate" UserSourceName="FillByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        mtn_no, transferred_date, from_where, to_where, asset_code, quantity, working_status, hire_name
+FROM            mtn_details_table
+WHERE transferred_date = @date
+ORDER BY mtn_no</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="date" ColumnName="transferred_date" DataSourceName="TRIOConstructionsInventory.dbo.mtn_details_table" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@date" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="transferred_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByLocation" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByLocation" GeneratorSourceName="FillByLocation" GetMethodModifier="Public" GetMethodName="GetDataByLocation" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByLocation" UserSourceName="FillByLocation">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        mtn_no, transferred_date, from_where, to_where, asset_code, quantity, working_status, hire_name
+FROM            mtn_details_table
+WHERE from_where = @location
+ORDER BY mtn_no</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="location" ColumnName="from_where" DataSourceName="TRIOConstructionsInventory.dbo.mtn_details_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@location" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="from_where" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByMTN" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByMTN" GeneratorSourceName="FillByMTN" GetMethodModifier="Public" GetMethodName="GetDataByMTN" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByMTN" UserSourceName="FillByMTN">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        mtn_no, transferred_date, from_where, to_where, asset_code, quantity, working_status, hire_name
+FROM            mtn_details_table
+WHERE mtn_no = @mtnNo
+ORDER BY mtn_no</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="mtnNo" ColumnName="mtn_no" DataSourceName="TRIOConstructionsInventory.dbo.mtn_details_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@mtnNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mtn_edit_tableTableAdapter" GeneratorDataComponentClassName="mtn_edit_tableTableAdapter" Name="mtn_edit_table" UserDataComponentName="mtn_edit_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_edit_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [mtn_edit_table] ([mtn_no], [asset_code], [old_quantity], [new_quantity], [editor]) VALUES (@mtn_no, @asset_code, @old_quantity, @new_quantity, @editor)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@mtn_no" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@asset_code" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="asset_code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@old_quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="old_quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@new_quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="new_quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@editor" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="editor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT mtn_edit_table.*
+FROM mtn_edit_table
+WHERE mtn_no = @mtnNo</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="mtnNo" ColumnName="mtn_no" DataSourceName="TRIOConstructionsInventory.dbo.mtn_edit_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@mtnNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mtn_no" DataSetColumn="mtn_no" />
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="old_quantity" DataSetColumn="old_quantity" />
+              <Mapping SourceColumn="new_quantity" DataSetColumn="new_quantity" />
+              <Mapping SourceColumn="editor" DataSetColumn="editor" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="grn_details_tableTableAdapter" GeneratorDataComponentClassName="grn_details_tableTableAdapter" Name="grn_details_table" UserDataComponentName="grn_details_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.grn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [grn_details_table] ([mtn_no], [grn_no], [transferred_date], [received_date], [receiver], [asset_code], [quantity], [working_status], [current_status]) VALUES (@mtn_no, @grn_no, @transferred_date, @received_date, @receiver, @asset_code, @quantity, @working_status, @current_status)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@mtn_no" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@grn_no" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="grn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@transferred_date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="transferred_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@received_date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="received_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@receiver" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="receiver" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@asset_code" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="asset_code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@working_status" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="working_status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@current_status" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="current_status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT grn_details_table.*
+FROM grn_details_table</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mtn_no" DataSetColumn="mtn_no" />
+              <Mapping SourceColumn="grn_no" DataSetColumn="grn_no" />
+              <Mapping SourceColumn="transferred_date" DataSetColumn="transferred_date" />
+              <Mapping SourceColumn="received_date" DataSetColumn="received_date" />
+              <Mapping SourceColumn="receiver" DataSetColumn="receiver" />
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="working_status" DataSetColumn="working_status" />
+              <Mapping SourceColumn="current_status" DataSetColumn="current_status" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.grn_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByMTN" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByMTN" GeneratorSourceName="FillByMTN" GetMethodModifier="Public" GetMethodName="GetDataByMTN" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByMTN" UserSourceName="FillByMTN">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT grn_details_table.*
+FROM grn_details_table
+WHERE mtn_no = @mtnNo</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="mtnNo" ColumnName="mtn_no" DataSourceName="TRIOConstructionsInventory.dbo.grn_details_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@mtnNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="mtn_no" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="claim_details_tableTableAdapter" GeneratorDataComponentClassName="claim_details_tableTableAdapter" Name="claim_details_table" UserDataComponentName="claim_details_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.claim_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByAction" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByAction" GeneratorSourceName="FillByAction" GetMethodModifier="Public" GetMethodName="GetDataByAction" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAction" UserSourceName="FillByAction">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_code, quantity, filtered_date, done_date, remarks, status
+FROM claim_details_table
+WHERE action = @action</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="action" ColumnName="action" DataSourceName="TRIOConstructionsInventory.dbo.claim_details_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@action" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="action" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="filtered_date" DataSetColumn="filtered_date" />
+              <Mapping SourceColumn="done_date" DataSetColumn="done_date" />
+              <Mapping SourceColumn="remarks" DataSetColumn="remarks" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="asset_details_table1TableAdapter" GeneratorDataComponentClassName="asset_details_table1TableAdapter" Name="asset_details_table1" UserDataComponentName="asset_details_table1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByQuality" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByQuality" GeneratorSourceName="FillByQuality" GetMethodModifier="Public" GetMethodName="GetDataByQuality" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByQuality" UserSourceName="FillByQuality">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_name, asset_code, quantity, launch_date, supplier, asset_description, location, expirydateof_warranty, repair_history, remarks, cost
+FROM asset_details_table
+WHERE quality = @quality</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="quality" ColumnName="quality" DataSourceName="TRIOConstructionsInventory.dbo.asset_details_table" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@quality" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="quality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_name" DataSetColumn="asset_name" />
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="launch_date" DataSetColumn="launch_date" />
+              <Mapping SourceColumn="supplier" DataSetColumn="supplier" />
+              <Mapping SourceColumn="asset_description" DataSetColumn="asset_description" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+              <Mapping SourceColumn="expirydateof_warranty" DataSetColumn="expirydateof_warranty" />
+              <Mapping SourceColumn="repair_history" DataSetColumn="repair_history" />
+              <Mapping SourceColumn="remarks" DataSetColumn="remarks" />
+              <Mapping SourceColumn="cost" DataSetColumn="cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="asset_details_table2TableAdapter" GeneratorDataComponentClassName="asset_details_table2TableAdapter" Name="asset_details_table2" UserDataComponentName="asset_details_table2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.asset_details_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDate" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByDate" GeneratorSourceName="FillByDate" GetMethodModifier="Public" GetMethodName="GetDataByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByDate" UserSourceName="FillByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT asset_name, asset_code, quantity, quality, launch_date, supplier, asset_description, location, expirydateof_warranty, repair_history, remarks
+FROM asset_details_table
+WHERE asset_details_table.expirydateof_warranty &gt;= @date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="date" ColumnName="expirydateof_warranty" DataSourceName="TRIOConstructionsInventory.dbo.asset_details_table" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@date" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="expirydateof_warranty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="asset_name" DataSetColumn="asset_name" />
+              <Mapping SourceColumn="asset_code" DataSetColumn="asset_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="quality" DataSetColumn="quality" />
+              <Mapping SourceColumn="launch_date" DataSetColumn="launch_date" />
+              <Mapping SourceColumn="supplier" DataSetColumn="supplier" />
+              <Mapping SourceColumn="asset_description" DataSetColumn="asset_description" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+              <Mapping SourceColumn="expirydateof_warranty" DataSetColumn="expirydateof_warranty" />
+              <Mapping SourceColumn="repair_history" DataSetColumn="repair_history" />
+              <Mapping SourceColumn="remarks" DataSetColumn="remarks" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mtn_status_tableTableAdapter" GeneratorDataComponentClassName="mtn_status_tableTableAdapter" Name="mtn_status_table" UserDataComponentName="mtn_status_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRIOConstructionsInventoryConnectionString (Settings)" DbObjectName="TRIOConstructionsInventory.dbo.mtn_status_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT mtn_no, transferred_date
+FROM mtn_status_table
+WHERE dilivery_status = @status</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="status" ColumnName="dilivery_status" DataSourceName="TRIOConstructionsInventory.dbo.mtn_status_table" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@status" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="dilivery_status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mtn_no" DataSetColumn="mtn_no" />
+              <Mapping SourceColumn="transferred_date" DataSetColumn="transferred_date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Company_Inventory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Company_Inventory" msprop:Generator_UserDSName="Company_Inventory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="asset_details_table" msprop:Generator_TableClassName="asset_details_tableDataTable" msprop:Generator_TableVarName="tableasset_details_table" msprop:Generator_TablePropName="asset_details_table" msprop:Generator_RowDeletingName="asset_details_tableRowDeleting" msprop:Generator_RowChangingName="asset_details_tableRowChanging" msprop:Generator_RowEvHandlerName="asset_details_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="asset_details_tableRowDeleted" msprop:Generator_UserTableName="asset_details_table" msprop:Generator_RowChangedName="asset_details_tableRowChanged" msprop:Generator_RowEvArgName="asset_details_tableRowChangeEvent" msprop:Generator_RowClassName="asset_details_tableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_name" msprop:Generator_ColumnVarNameInTable="columnasset_name" msprop:Generator_ColumnPropNameInRow="asset_name" msprop:Generator_ColumnPropNameInTable="asset_nameColumn" msprop:Generator_UserColumnName="asset_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="quality" msprop:Generator_ColumnVarNameInTable="columnquality" msprop:Generator_ColumnPropNameInRow="quality" msprop:Generator_ColumnPropNameInTable="qualityColumn" msprop:Generator_UserColumnName="quality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="launch_date" msprop:Generator_ColumnVarNameInTable="columnlaunch_date" msprop:Generator_ColumnPropNameInRow="launch_date" msprop:Generator_ColumnPropNameInTable="launch_dateColumn" msprop:Generator_UserColumnName="launch_date" type="xs:dateTime" />
+              <xs:element name="supplier" msprop:Generator_ColumnVarNameInTable="columnsupplier" msprop:Generator_ColumnPropNameInRow="supplier" msprop:Generator_ColumnPropNameInTable="supplierColumn" msprop:Generator_UserColumnName="supplier">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_description" msprop:Generator_ColumnVarNameInTable="columnasset_description" msprop:Generator_ColumnPropNameInRow="asset_description" msprop:Generator_ColumnPropNameInTable="asset_descriptionColumn" msprop:Generator_UserColumnName="asset_description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="po_number" msprop:Generator_ColumnVarNameInTable="columnpo_number" msprop:Generator_ColumnPropNameInRow="po_number" msprop:Generator_ColumnPropNameInTable="po_numberColumn" msprop:Generator_UserColumnName="po_number" type="xs:int" />
+              <xs:element name="grn_no" msprop:Generator_ColumnVarNameInTable="columngrn_no" msprop:Generator_ColumnPropNameInRow="grn_no" msprop:Generator_ColumnPropNameInTable="grn_noColumn" msprop:Generator_UserColumnName="grn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="serial_no" msprop:Generator_ColumnVarNameInTable="columnserial_no" msprop:Generator_ColumnPropNameInRow="serial_no" msprop:Generator_ColumnPropNameInTable="serial_noColumn" msprop:Generator_UserColumnName="serial_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="invoice_no" msprop:Generator_ColumnVarNameInTable="columninvoice_no" msprop:Generator_ColumnPropNameInRow="invoice_no" msprop:Generator_ColumnPropNameInTable="invoice_noColumn" msprop:Generator_UserColumnName="invoice_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expirydateof_warranty" msprop:Generator_ColumnVarNameInTable="columnexpirydateof_warranty" msprop:Generator_ColumnPropNameInRow="expirydateof_warranty" msprop:Generator_ColumnPropNameInTable="expirydateof_warrantyColumn" msprop:Generator_UserColumnName="expirydateof_warranty" type="xs:dateTime" />
+              <xs:element name="repair_history" msprop:Generator_ColumnVarNameInTable="columnrepair_history" msprop:Generator_ColumnPropNameInRow="repair_history" msprop:Generator_ColumnPropNameInTable="repair_historyColumn" msprop:Generator_UserColumnName="repair_history">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:int" />
+              <xs:element name="pre_fix" msprop:Generator_ColumnVarNameInTable="columnpre_fix" msprop:Generator_ColumnPropNameInRow="pre_fix" msprop:Generator_ColumnPropNameInTable="pre_fixColumn" msprop:Generator_UserColumnName="pre_fix">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="site_inventory_table" msprop:Generator_TableClassName="site_inventory_tableDataTable" msprop:Generator_TableVarName="tablesite_inventory_table" msprop:Generator_RowChangedName="site_inventory_tableRowChanged" msprop:Generator_TablePropName="site_inventory_table" msprop:Generator_RowDeletingName="site_inventory_tableRowDeleting" msprop:Generator_RowChangingName="site_inventory_tableRowChanging" msprop:Generator_RowEvHandlerName="site_inventory_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="site_inventory_tableRowDeleted" msprop:Generator_RowClassName="site_inventory_tableRow" msprop:Generator_UserTableName="site_inventory_table" msprop:Generator_RowEvArgName="site_inventory_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_name" msprop:Generator_ColumnVarNameInTable="columnasset_name" msprop:Generator_ColumnPropNameInRow="asset_name" msprop:Generator_ColumnPropNameInTable="asset_nameColumn" msprop:Generator_UserColumnName="asset_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="site" msprop:Generator_ColumnVarNameInTable="columnsite" msprop:Generator_ColumnPropNameInRow="site" msprop:Generator_ColumnPropNameInTable="siteColumn" msprop:Generator_UserColumnName="site">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mtn_details_table" msprop:Generator_TableClassName="mtn_details_tableDataTable" msprop:Generator_TableVarName="tablemtn_details_table" msprop:Generator_RowChangedName="mtn_details_tableRowChanged" msprop:Generator_TablePropName="mtn_details_table" msprop:Generator_RowDeletingName="mtn_details_tableRowDeleting" msprop:Generator_RowChangingName="mtn_details_tableRowChanging" msprop:Generator_RowEvHandlerName="mtn_details_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="mtn_details_tableRowDeleted" msprop:Generator_RowClassName="mtn_details_tableRow" msprop:Generator_UserTableName="mtn_details_table" msprop:Generator_RowEvArgName="mtn_details_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mtn_no" msprop:Generator_ColumnVarNameInTable="columnmtn_no" msprop:Generator_ColumnPropNameInRow="mtn_no" msprop:Generator_ColumnPropNameInTable="mtn_noColumn" msprop:Generator_UserColumnName="mtn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transferred_date" msprop:Generator_ColumnVarNameInTable="columntransferred_date" msprop:Generator_ColumnPropNameInRow="transferred_date" msprop:Generator_ColumnPropNameInTable="transferred_dateColumn" msprop:Generator_UserColumnName="transferred_date" type="xs:dateTime" />
+              <xs:element name="from_where" msprop:Generator_ColumnVarNameInTable="columnfrom_where" msprop:Generator_ColumnPropNameInRow="from_where" msprop:Generator_ColumnPropNameInTable="from_whereColumn" msprop:Generator_UserColumnName="from_where">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="to_where" msprop:Generator_ColumnVarNameInTable="columnto_where" msprop:Generator_ColumnPropNameInRow="to_where" msprop:Generator_ColumnPropNameInTable="to_whereColumn" msprop:Generator_UserColumnName="to_where">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="working_status" msprop:Generator_ColumnVarNameInTable="columnworking_status" msprop:Generator_ColumnPropNameInRow="working_status" msprop:Generator_ColumnPropNameInTable="working_statusColumn" msprop:Generator_UserColumnName="working_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hire_name" msprop:Generator_ColumnVarNameInTable="columnhire_name" msprop:Generator_ColumnPropNameInRow="hire_name" msprop:Generator_ColumnPropNameInTable="hire_nameColumn" msprop:Generator_UserColumnName="hire_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mtn_edit_table" msprop:Generator_TableClassName="mtn_edit_tableDataTable" msprop:Generator_TableVarName="tablemtn_edit_table" msprop:Generator_RowChangedName="mtn_edit_tableRowChanged" msprop:Generator_TablePropName="mtn_edit_table" msprop:Generator_RowDeletingName="mtn_edit_tableRowDeleting" msprop:Generator_RowChangingName="mtn_edit_tableRowChanging" msprop:Generator_RowEvHandlerName="mtn_edit_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="mtn_edit_tableRowDeleted" msprop:Generator_RowClassName="mtn_edit_tableRow" msprop:Generator_UserTableName="mtn_edit_table" msprop:Generator_RowEvArgName="mtn_edit_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mtn_no" msprop:Generator_ColumnVarNameInTable="columnmtn_no" msprop:Generator_ColumnPropNameInRow="mtn_no" msprop:Generator_ColumnPropNameInTable="mtn_noColumn" msprop:Generator_UserColumnName="mtn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="old_quantity" msprop:Generator_ColumnVarNameInTable="columnold_quantity" msprop:Generator_ColumnPropNameInRow="old_quantity" msprop:Generator_ColumnPropNameInTable="old_quantityColumn" msprop:Generator_UserColumnName="old_quantity" type="xs:int" />
+              <xs:element name="new_quantity" msprop:Generator_ColumnVarNameInTable="columnnew_quantity" msprop:Generator_ColumnPropNameInRow="new_quantity" msprop:Generator_ColumnPropNameInTable="new_quantityColumn" msprop:Generator_UserColumnName="new_quantity" type="xs:int" />
+              <xs:element name="editor" msprop:Generator_ColumnVarNameInTable="columneditor" msprop:Generator_ColumnPropNameInRow="editor" msprop:Generator_ColumnPropNameInTable="editorColumn" msprop:Generator_UserColumnName="editor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="grn_details_table" msprop:Generator_TableClassName="grn_details_tableDataTable" msprop:Generator_TableVarName="tablegrn_details_table" msprop:Generator_RowChangedName="grn_details_tableRowChanged" msprop:Generator_TablePropName="grn_details_table" msprop:Generator_RowDeletingName="grn_details_tableRowDeleting" msprop:Generator_RowChangingName="grn_details_tableRowChanging" msprop:Generator_RowEvHandlerName="grn_details_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="grn_details_tableRowDeleted" msprop:Generator_RowClassName="grn_details_tableRow" msprop:Generator_UserTableName="grn_details_table" msprop:Generator_RowEvArgName="grn_details_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mtn_no" msprop:Generator_ColumnVarNameInTable="columnmtn_no" msprop:Generator_ColumnPropNameInRow="mtn_no" msprop:Generator_ColumnPropNameInTable="mtn_noColumn" msprop:Generator_UserColumnName="mtn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grn_no" msprop:Generator_ColumnVarNameInTable="columngrn_no" msprop:Generator_ColumnPropNameInRow="grn_no" msprop:Generator_ColumnPropNameInTable="grn_noColumn" msprop:Generator_UserColumnName="grn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transferred_date" msprop:Generator_ColumnVarNameInTable="columntransferred_date" msprop:Generator_ColumnPropNameInRow="transferred_date" msprop:Generator_ColumnPropNameInTable="transferred_dateColumn" msprop:Generator_UserColumnName="transferred_date" type="xs:dateTime" />
+              <xs:element name="received_date" msprop:Generator_ColumnVarNameInTable="columnreceived_date" msprop:Generator_ColumnPropNameInRow="received_date" msprop:Generator_ColumnPropNameInTable="received_dateColumn" msprop:Generator_UserColumnName="received_date" type="xs:dateTime" />
+              <xs:element name="receiver" msprop:Generator_ColumnVarNameInTable="columnreceiver" msprop:Generator_ColumnPropNameInRow="receiver" msprop:Generator_ColumnPropNameInTable="receiverColumn" msprop:Generator_UserColumnName="receiver">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="working_status" msprop:Generator_ColumnVarNameInTable="columnworking_status" msprop:Generator_ColumnPropNameInRow="working_status" msprop:Generator_ColumnPropNameInTable="working_statusColumn" msprop:Generator_UserColumnName="working_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="current_status" msprop:Generator_ColumnVarNameInTable="columncurrent_status" msprop:Generator_ColumnPropNameInRow="current_status" msprop:Generator_ColumnPropNameInTable="current_statusColumn" msprop:Generator_UserColumnName="current_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="claim_details_table" msprop:Generator_TableClassName="claim_details_tableDataTable" msprop:Generator_TableVarName="tableclaim_details_table" msprop:Generator_RowChangedName="claim_details_tableRowChanged" msprop:Generator_TablePropName="claim_details_table" msprop:Generator_RowDeletingName="claim_details_tableRowDeleting" msprop:Generator_RowChangingName="claim_details_tableRowChanging" msprop:Generator_RowEvHandlerName="claim_details_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="claim_details_tableRowDeleted" msprop:Generator_RowClassName="claim_details_tableRow" msprop:Generator_UserTableName="claim_details_table" msprop:Generator_RowEvArgName="claim_details_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="filtered_date" msprop:Generator_ColumnVarNameInTable="columnfiltered_date" msprop:Generator_ColumnPropNameInRow="filtered_date" msprop:Generator_ColumnPropNameInTable="filtered_dateColumn" msprop:Generator_UserColumnName="filtered_date" type="xs:dateTime" />
+              <xs:element name="done_date" msprop:Generator_ColumnVarNameInTable="columndone_date" msprop:Generator_ColumnPropNameInRow="done_date" msprop:Generator_ColumnPropNameInTable="done_dateColumn" msprop:Generator_UserColumnName="done_date" type="xs:dateTime" />
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="asset_details_table1" msprop:Generator_TableClassName="asset_details_table1DataTable" msprop:Generator_TableVarName="tableasset_details_table1" msprop:Generator_RowChangedName="asset_details_table1RowChanged" msprop:Generator_TablePropName="asset_details_table1" msprop:Generator_RowDeletingName="asset_details_table1RowDeleting" msprop:Generator_RowChangingName="asset_details_table1RowChanging" msprop:Generator_RowEvHandlerName="asset_details_table1RowChangeEventHandler" msprop:Generator_RowDeletedName="asset_details_table1RowDeleted" msprop:Generator_RowClassName="asset_details_table1Row" msprop:Generator_UserTableName="asset_details_table1" msprop:Generator_RowEvArgName="asset_details_table1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_name" msprop:Generator_ColumnVarNameInTable="columnasset_name" msprop:Generator_ColumnPropNameInRow="asset_name" msprop:Generator_ColumnPropNameInTable="asset_nameColumn" msprop:Generator_UserColumnName="asset_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="launch_date" msprop:Generator_ColumnVarNameInTable="columnlaunch_date" msprop:Generator_ColumnPropNameInRow="launch_date" msprop:Generator_ColumnPropNameInTable="launch_dateColumn" msprop:Generator_UserColumnName="launch_date" type="xs:dateTime" />
+              <xs:element name="supplier" msprop:Generator_ColumnVarNameInTable="columnsupplier" msprop:Generator_ColumnPropNameInRow="supplier" msprop:Generator_ColumnPropNameInTable="supplierColumn" msprop:Generator_UserColumnName="supplier">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_description" msprop:Generator_ColumnVarNameInTable="columnasset_description" msprop:Generator_ColumnPropNameInRow="asset_description" msprop:Generator_ColumnPropNameInTable="asset_descriptionColumn" msprop:Generator_UserColumnName="asset_description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expirydateof_warranty" msprop:Generator_ColumnVarNameInTable="columnexpirydateof_warranty" msprop:Generator_ColumnPropNameInRow="expirydateof_warranty" msprop:Generator_ColumnPropNameInTable="expirydateof_warrantyColumn" msprop:Generator_UserColumnName="expirydateof_warranty" type="xs:dateTime" />
+              <xs:element name="repair_history" msprop:Generator_ColumnVarNameInTable="columnrepair_history" msprop:Generator_ColumnPropNameInRow="repair_history" msprop:Generator_ColumnPropNameInTable="repair_historyColumn" msprop:Generator_UserColumnName="repair_history">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="asset_details_table2" msprop:Generator_TableClassName="asset_details_table2DataTable" msprop:Generator_TableVarName="tableasset_details_table2" msprop:Generator_RowChangedName="asset_details_table2RowChanged" msprop:Generator_TablePropName="asset_details_table2" msprop:Generator_RowDeletingName="asset_details_table2RowDeleting" msprop:Generator_RowChangingName="asset_details_table2RowChanging" msprop:Generator_RowEvHandlerName="asset_details_table2RowChangeEventHandler" msprop:Generator_RowDeletedName="asset_details_table2RowDeleted" msprop:Generator_RowClassName="asset_details_table2Row" msprop:Generator_UserTableName="asset_details_table2" msprop:Generator_RowEvArgName="asset_details_table2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asset_name" msprop:Generator_ColumnVarNameInTable="columnasset_name" msprop:Generator_ColumnPropNameInRow="asset_name" msprop:Generator_ColumnPropNameInTable="asset_nameColumn" msprop:Generator_UserColumnName="asset_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_code" msprop:Generator_ColumnVarNameInTable="columnasset_code" msprop:Generator_ColumnPropNameInRow="asset_code" msprop:Generator_ColumnPropNameInTable="asset_codeColumn" msprop:Generator_UserColumnName="asset_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="quality" msprop:Generator_ColumnVarNameInTable="columnquality" msprop:Generator_ColumnPropNameInRow="quality" msprop:Generator_ColumnPropNameInTable="qualityColumn" msprop:Generator_UserColumnName="quality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="launch_date" msprop:Generator_ColumnVarNameInTable="columnlaunch_date" msprop:Generator_ColumnPropNameInRow="launch_date" msprop:Generator_ColumnPropNameInTable="launch_dateColumn" msprop:Generator_UserColumnName="launch_date" type="xs:dateTime" />
+              <xs:element name="supplier" msprop:Generator_ColumnVarNameInTable="columnsupplier" msprop:Generator_ColumnPropNameInRow="supplier" msprop:Generator_ColumnPropNameInTable="supplierColumn" msprop:Generator_UserColumnName="supplier">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asset_description" msprop:Generator_ColumnVarNameInTable="columnasset_description" msprop:Generator_ColumnPropNameInRow="asset_description" msprop:Generator_ColumnPropNameInTable="asset_descriptionColumn" msprop:Generator_UserColumnName="asset_description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expirydateof_warranty" msprop:Generator_ColumnVarNameInTable="columnexpirydateof_warranty" msprop:Generator_ColumnPropNameInRow="expirydateof_warranty" msprop:Generator_ColumnPropNameInTable="expirydateof_warrantyColumn" msprop:Generator_UserColumnName="expirydateof_warranty" type="xs:dateTime" />
+              <xs:element name="repair_history" msprop:Generator_ColumnVarNameInTable="columnrepair_history" msprop:Generator_ColumnPropNameInRow="repair_history" msprop:Generator_ColumnPropNameInTable="repair_historyColumn" msprop:Generator_UserColumnName="repair_history">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mtn_status_table" msprop:Generator_TableClassName="mtn_status_tableDataTable" msprop:Generator_TableVarName="tablemtn_status_table" msprop:Generator_RowChangedName="mtn_status_tableRowChanged" msprop:Generator_TablePropName="mtn_status_table" msprop:Generator_RowDeletingName="mtn_status_tableRowDeleting" msprop:Generator_RowChangingName="mtn_status_tableRowChanging" msprop:Generator_RowEvHandlerName="mtn_status_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="mtn_status_tableRowDeleted" msprop:Generator_RowClassName="mtn_status_tableRow" msprop:Generator_UserTableName="mtn_status_table" msprop:Generator_RowEvArgName="mtn_status_tableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mtn_no" msprop:Generator_ColumnVarNameInTable="columnmtn_no" msprop:Generator_ColumnPropNameInRow="mtn_no" msprop:Generator_ColumnPropNameInTable="mtn_noColumn" msprop:Generator_UserColumnName="mtn_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transferred_date" msprop:Generator_ColumnVarNameInTable="columntransferred_date" msprop:Generator_ColumnPropNameInRow="transferred_date" msprop:Generator_ColumnPropNameInTable="transferred_dateColumn" msprop:Generator_UserColumnName="transferred_date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

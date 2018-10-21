@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66B3DF9D-717A-4097-AA8B-DAD14F95DAE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRIO_Constructions</RootNamespace>
+    <AssemblyName>TRIO Constructions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inventory_categories_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Active Sites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Active Sites.Designer.cs">
+      <DependentUpon>Active Sites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Equipment Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Equipment Type.Designer.cs">
+      <DependentUpon>Add Equipment Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Items.Designer.cs">
+      <DependentUpon>Add Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Sites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Sites.Designer.cs">
+      <DependentUpon>Add Sites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Supplier.Designer.cs">
+      <DependentUpon>Add Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arrange Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrange Assets.Designer.cs">
+      <DependentUpon>Arrange Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Claim Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Claim Report.Designer.cs">
+      <DependentUpon>Claim Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company Inventory.cs">
+      <DependentUpon>Company Inventory.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Company Inventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Company Inventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Company Pool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company Pool.Designer.cs">
+      <DependentUpon>Company Pool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnector.cs" />
+    <Compile Include="Delete Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Supplier.Designer.cs">
+      <DependentUpon>Delete Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Categories.Designer.cs">
+      <DependentUpon>Edit Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Item.Designer.cs">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit MTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit MTN.Designer.cs">
+      <DependentUpon>Edit MTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Sites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Sites.Designer.cs">
+      <DependentUpon>Edit Sites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN Report.Designer.cs">
+      <DependentUpon>GRN Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN.Designer.cs">
+      <DependentUpon>GRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hired Items Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hired Items Report.Designer.cs">
+      <DependentUpon>Hired Items Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTN Edit Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTN Edit Details.Designer.cs">
+      <DependentUpon>MTN Edit Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTN Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTN Report.Designer.cs">
+      <DependentUpon>MTN Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTN.Designer.cs">
+      <DependentUpon>MTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New User.Designer.cs">
+      <DependentUpon>New User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operator.Designer.cs">
+      <DependentUpon>Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pending MTN Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pending MTN Report.Designer.cs">
+      <DependentUpon>Pending MTN Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return Assets.Designer.cs">
+      <DependentUpon>Return Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Site Inventory Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site Inventory Report.Designer.cs">
+      <DependentUpon>Site Inventory Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty Available Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warranty Available Items.Designer.cs">
+      <DependentUpon>Warranty Available Items.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Active Sites.resx">
+      <DependentUpon>Active Sites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Equipment Type.resx">
+      <DependentUpon>Add Equipment Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Items.resx">
+      <DependentUpon>Add Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Sites.resx">
+      <DependentUpon>Add Sites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Supplier.resx">
+      <DependentUpon>Add Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arrange Assets.resx">
+      <DependentUpon>Arrange Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Claim Report.rdlc" />
+    <EmbeddedResource Include="Claim Report.resx">
+      <DependentUpon>Claim Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company Pool.rdlc" />
+    <EmbeddedResource Include="Company Pool.resx">
+      <DependentUpon>Company Pool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Supplier.resx">
+      <DependentUpon>Delete Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Categories.resx">
+      <DependentUpon>Edit Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Item.resx">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit MTN.resx">
+      <DependentUpon>Edit MTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Sites.resx">
+      <DependentUpon>Edit Sites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN Report.rdlc" />
+    <EmbeddedResource Include="GRN Report.resx">
+      <DependentUpon>GRN Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN.resx">
+      <DependentUpon>GRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hired Items Report.rdlc" />
+    <EmbeddedResource Include="Hired Items Report.resx">
+      <DependentUpon>Hired Items Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTN Edit Details.rdlc" />
+    <EmbeddedResource Include="MTN Edit Details.resx">
+      <DependentUpon>MTN Edit Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTN Report.rdlc" />
+    <EmbeddedResource Include="MTN Report.resx">
+      <DependentUpon>MTN Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTN.resx">
+      <DependentUpon>MTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New User.resx">
+      <DependentUpon>New User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operator.resx">
+      <DependentUpon>Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pending MTN Report.rdlc" />
+    <EmbeddedResource Include="Pending MTN Report.resx">
+      <DependentUpon>Pending MTN Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Return Assets.resx">
+      <DependentUpon>Return Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Site Inventory Report.rdlc" />
+    <EmbeddedResource Include="Site Inventory Report.resx">
+      <DependentUpon>Site Inventory Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warranty Available Items.rdlc" />
+    <EmbeddedResource Include="Warranty Available Items.resx">
+      <DependentUpon>Warranty Available Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Company Inventory.xsc">
+      <DependentUpon>Company Inventory.xsd</DependentUpon>
+    </None>
+    <None Include="Company Inventory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Company Inventory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Company Inventory.xss">
+      <DependentUpon>Company Inventory.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inventory_categories_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

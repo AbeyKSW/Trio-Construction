@@ -1,0 +1,119 @@
+E:\IMS\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe.config
+E:\IMS\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe
+E:\IMS\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.pdb
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\ResolveAssemblyReference.cache
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.About.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Active_Sites.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Equipment_Type.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Items.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Sites.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Supplier.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Admin.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Arrange_Assets.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Change_Password.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Claim_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Company_Pool.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Delete_Supplier.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Categories.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Item.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_MTN.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Sites.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Hired_Items_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.LoginForm.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Edit_Details.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.New_User.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Operator.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Pending_MTN_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Properties.Resources.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Return_Assets.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Site_Inventory_Report.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Warranty_Available_Items.resources
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\GenerateResource.read.1.tlog
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\GenerateResource.write.1.tlog
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.cache
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.compiled
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.exe
+E:\IMS\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.pdb
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe.config
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.exe
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.pdb
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.pdb
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.About.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Active_Sites.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Equipment_Type.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Items.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Sites.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Supplier.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Admin.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Arrange_Assets.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Change_Password.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Claim_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Company_Pool.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Delete_Supplier.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Categories.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Item.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_MTN.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Sites.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Hired_Items_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.LoginForm.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Edit_Details.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.New_User.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Operator.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Pending_MTN_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Properties.Resources.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Return_Assets.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Site_Inventory_Report.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Warranty_Available_Items.resources
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.cache
+D:\Softwares\IMS 2017.02.11 - All Done Updated\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.compiled
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe.config
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.exe
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.pdb
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.exe
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\bin\Release\TRIO Constructions.pdb
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.csprojResolveAssemblyReference.cache
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.About.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Active_Sites.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Equipment_Type.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Items.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Sites.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Add_Supplier.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Admin.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Arrange_Assets.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Change_Password.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Claim_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Company_Pool.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Delete_Supplier.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Categories.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Item.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_MTN.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Edit_Sites.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.GRN.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Hired_Items_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.LoginForm.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Edit_Details.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.MTN.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.New_User.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Operator.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Pending_MTN_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Properties.Resources.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Return_Assets.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Site_Inventory_Report.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO_Constructions.Warranty_Available_Items.resources
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\TRIO Constructions.csproj.GenerateResource.Cache
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.cache
+E:\Backups\IMS 2017.03.18 - Update\TRIO Constructions\TRIO Constructions\obj\x86\Release\RdlCompile.compiled
